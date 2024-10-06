@@ -1,0 +1,88 @@
+/* Налаштування для тіла сторінки */
+body {
+    background: linear-gradient(135deg, #17a2b8, #007bff); /* Градієнт з двох кольорів */
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Новий шрифт */
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер */
+.container {
+    max-width: 400px; /* Фіксована ширина для контейнера */
+    margin: 50px auto; /* Центрування контейнера */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Більша тінь для глибини */
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Поля вводу */
+input[type="text"] {
+    width: 100%; /* Поля будуть займати весь простір контейнера */
+    max-width: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Додаткова тінь */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Центрування полів вводу */
+}
+
+/* Кнопка */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #17a2b8;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анімація кольору */
+}
+
+/* Стиль при наведенні на кнопку */
+button:hover {
+    background-color: #003942;
+    color: white;
+}
+
+/* Центрування тексту для блоку з погодою */
+.weather-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Центрування зображення */
+.weather-info img {
+    display: block;
+    margin: 10px auto; /* Центрування картинки */
+    max-width: 100px; /* Опціонально: обмеження розміру картинки */
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Відповідна ширина для мобільних пристроїв */
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2em; /* Менший заголовок для мобільних */
+    }
+
+    button {
+        font-size: 1em; /* Менший розмір кнопки */
+    }
+}
